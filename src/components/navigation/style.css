@@ -1,0 +1,23 @@
+.navigation {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-title {
+  flex: 1 1;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 1.2em;
+  font-size: 1.5em;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

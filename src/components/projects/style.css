@@ -1,7 +1,7 @@
 .projects {
   width: 60%;
   margin: auto;
-  margin-top: 10em;
+  margin-top: 4em;
   display: flex;
   flex-direction: column;
 }
