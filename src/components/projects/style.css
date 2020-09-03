@@ -1,0 +1,19 @@
+.projects {
+  width: 60%;
+  margin: auto;
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1500px) {
+  .projects {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects {
+    width: 95%;
+  }
+}
