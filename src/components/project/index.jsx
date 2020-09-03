@@ -1,7 +1,14 @@
 import React from "react";
 import "./style.css";
 
-export default function Project({ title, description, image, technologies }) {
+export default function Project({
+  title,
+  description,
+  image,
+  technologies,
+  demo,
+  code,
+}) {
   return (
     <div className="project">
       <img src={image} className="project-img" alt="" />
@@ -13,8 +20,24 @@ export default function Project({ title, description, image, technologies }) {
           <b>Teknologier brukt:</b> {technologies}
         </p>
         <div className="project-btn-group">
-          <button className="project-btn">Demo</button>
-          <button className="project-btn">Vis Kildekode</button>
+          {demo ? (
+            <a href={demo} className="project-btn">
+              Demo
+            </a>
+          ) : (
+            <a disabled className="project-btn project-btn-disabled">
+              Demo
+            </a>
+          )}
+          {code ? (
+            <a href={code} className="project-btn">
+              Vis kildekode
+            </a>
+          ) : (
+            <a disabled className="project-btn project-btn-disabled">
+              Vis Kildekode
+            </a>
+          )}
         </div>
       </div>
     </div>

@@ -16,6 +16,7 @@ export default function Projects() {
          at sidens design for øyeblikket gjennomgår store endringer."
         image={oweIt}
         technologies="React, Django, PostgresSQL"
+        demo="https://www.owe-it.com/"
       />
       <Project
         title="NBA Stats app"
@@ -26,6 +27,7 @@ export default function Projects() {
         nettsider er svært trege."
         image={nba}
         technologies="React, Electron"
+        code="https://github.com/haavardsjef/nba-stats-checker"
       />
     </div>
   );
