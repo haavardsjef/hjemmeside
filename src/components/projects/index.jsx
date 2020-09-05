@@ -4,6 +4,7 @@ import "./style.css";
 
 import nba from "./../../assets/nba.png";
 import oweIt from "./../../assets/owe-it.png";
+import Karakterkalkulator from "./../../assets/karakterkalkulator.png";
 
 export default function Projects() {
   return (
@@ -28,6 +29,16 @@ export default function Projects() {
         image={nba}
         technologies="React, Electron"
         code="https://github.com/haavardsjef/nba-stats-checker"
+      />
+      <Project
+        title="Karakterkalkulator"
+        description="Responsiv webapplikasjon bygget fra scratch ved hjelp av HTML,
+        CSS, Javascript, Bootstrap. Har for øyeblikket ingen backend og
+        data lagres ved hjelp av HTML Web Storage"
+        image={Karakterkalkulator}
+        technologies="HTML, CSS, Bootstrap"
+        demo="https://vibrant-goldstine-c92091.netlify.app/karakterkalkulator.html"
+        code="https://github.com/haavardsjef/KarakterKalkulator"
       />
     </div>
   );

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Karakterkalkulator</title>
+    <link rel="icon" type="image/png" href="assets/images/icons/A+.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="KKalk.js"></script>
+    <link rel="stylesheet" href="assets/css/karakterkalkulator.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body onload="loadState()">
+    <h1 onload="updateTotals()"></h1>
+    <!-- Displaying grades-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h1>Karakterkalkulator</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h4 class="text-center">NYTT EMNE</h4>
+          <form id="addSubject">
+            <div class="form-group">
+              <label for="subjectId">Emnekode</label>
+              <input type="text" class="form-control" id="subjectId" />
+            </div>
+            <div class="form-group">
+              <label for="subjectName">Navn på emne</label>
+              <input type="text" class="form-control" id="subjectName" />
+            </div>
+            <div class="form-group">
+              <label for="grade">Karakter</label>
+              <select class="form-control" id="grade">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="points">Studiepoeng</label>
+              <input
+                type="number"
+                min="0"
+                max="60"
+                class="form-control"
+                id="points"
+                placeholder="7,5"
+                value="7.5"
+              />
+              <small id="passwordHelpBlock" class="form-text text-muted">
+                Må inneholde et desimaltall.
+              </small>
+            </div>
+            <input
+              id="fullwidth"
+              type="submit"
+              value="+"
+              onClick="getInput();return false;"
+              class="btn btn-primary"
+            />
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <h4 class="text-center">DINE TOTALER</h4>
+          <table id="totals" class="table table-hover">
+            <tr>
+              <td>Karaktersnitt</td>
+              <td id="average">A</td>
+            </tr>
+            <tr>
+              <td>Numerisk snitt</td>
+              <td id="numericalAverage">5.0</td>
+            </tr>
+            <tr>
+              <td>Totalt antall Studiepoeng</td>
+              <td id="totalPoints">0.0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="text-center">DINE KARAKTERER</h4>
+          <table id="karaktertable" class="table table-hover">
+            <tr class="thead-dark">
+              <th>Emnekode</th>
+              <th>Emnenavn</th>
+              <th>Karakter</th>
+              <th>Studiepoeng</th>
+              <th>Slett</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="index.html">
+            <div class="btn btn-primary">Hjem</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
