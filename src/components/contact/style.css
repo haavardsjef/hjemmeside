@@ -2,3 +2,15 @@
   width: 60%;
   margin: auto;
 }
+
+@media only screen and (max-width: 1500px) {
+  .contact-wrapper {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-wrapper {
+    width: 95%;
+  }
+}

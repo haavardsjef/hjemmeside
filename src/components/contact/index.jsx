@@ -7,7 +7,11 @@ export default function Contact() {
       <h1>Kontakt Håvard Hjelmeseth</h1>
       <p>E-post: havhje@gmail.com</p>
       <p>
-        <a target="_blank" href="https://github.com/haavardsjef/">
+        <a
+          target="_blank"
+          href="https://github.com/haavardsjef/"
+          rel="noopener noreferrer"
+        >
           Github
         </a>
       </p>
@@ -15,6 +19,7 @@ export default function Contact() {
         <a
           target="_blank"
           href="https://www.linkedin.com/in/h%C3%A5vard-hjelmeseth-7a979a12a/"
+          rel="noopener noreferrer"
         >
           LinkedIn
         </a>

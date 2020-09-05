@@ -25,18 +25,18 @@ export default function Project({
               Demo
             </a>
           ) : (
-            <a disabled className="project-btn project-btn-disabled">
+            <button disabled className="project-btn project-btn-disabled">
               Demo
-            </a>
+            </button>
           )}
           {code ? (
             <a href={code} className="project-btn">
               Vis kildekode
             </a>
           ) : (
-            <a disabled className="project-btn project-btn-disabled">
+            <button disabled className="project-btn project-btn-disabled">
               Vis Kildekode
-            </a>
+            </button>
           )}
         </div>
       </div>
