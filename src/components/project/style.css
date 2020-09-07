@@ -6,7 +6,7 @@
 
 .project-img {
   width: 60%;
-  object-fit: cover;
+  object-fit: contain;
 }
 @media only screen and (max-width: 1500px) {
   .project {
