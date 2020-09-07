@@ -2,9 +2,9 @@ import React from "react";
 import Project from "./../project";
 import "./style.css";
 
-import nba from "./../../assets/nba.png";
+import nba from "./../../assets/nba-app.png";
 import oweIt from "./../../assets/owe-it.png";
-import Karakterkalkulator from "./../../assets/karakterkalkulator.png";
+import Karakterkalkulator from "./../../assets/karakter-kalkulator.png";
 
 export default function Projects() {
   return (
