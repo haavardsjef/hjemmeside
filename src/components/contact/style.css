@@ -1,6 +1,31 @@
 .contact-wrapper {
   width: 60%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-img {
+  width: 50%;
+}
+
+.contact-title {
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.contact-email {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #0074d9;
+}
+
+.contact-socials {
+  margin: 1em;
+}
+.contact-socials > a {
+  margin: 0 0.5em;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -12,5 +37,9 @@
 @media only screen and (max-width: 1000px) {
   .contact-wrapper {
     width: 95%;
+  }
+
+  .contact-img {
+    width: 75%;
   }
 }
