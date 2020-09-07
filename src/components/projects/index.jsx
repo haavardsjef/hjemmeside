@@ -6,6 +6,7 @@ import nba from "./../../assets/nba-app.png";
 import oweIt from "./../../assets/owe-it.png";
 import Karakterkalkulator from "./../../assets/karakter-kalkulator.png";
 import sellyoshit from "./../../assets/sellyoshit.png";
+import hjemmeside from "./../../assets/hjemmeside.png";
 
 export default function Projects() {
   return (
@@ -50,6 +51,15 @@ export default function Projects() {
         image={sellyoshit}
         technologies="React, Material UI"
         code="https://github.com/haavardsjef/sell-yo-shit"
+      />
+      <Project
+        title="Hjelmeseth.com"
+        description="Min personlige hjemmeside (som du er inne på nå) er en enkel single page 
+        application, skrevet i React og stylet med CSS uten noen rammverker. Link til Demo er 
+        ikke tilgjengelig ettersom du allerede er inne på siden."
+        image={hjemmeside}
+        technologies="React"
+        code="https://github.com/haavardsjef/hjemmeside"
       />
     </div>
   );
