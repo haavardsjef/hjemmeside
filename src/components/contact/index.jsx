@@ -8,7 +8,7 @@ import facebook from "./../../assets/facebook.svg";
 export default function Contact() {
   return (
     <div className="contact-wrapper">
-      <img src={pc} className="contact-img" />
+      <img src={pc} className="contact-img" alt="banner" />
       <h1 className="contact-title">KONTAKT MEG</h1>
       <a href="mailto:havhje@gmail.com" className="contact-email">
         havhje@gmail.com
@@ -19,21 +19,21 @@ export default function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={github} />
+          <img src={github} alt="Github logo" />
         </a>
         <a
           href="https://www.linkedin.com/in/h%C3%A5vard-hjelmeseth-7a979a12a/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={linkedin} />
+          <img src={linkedin} alt="LinkedIn logo" />
         </a>
         <a
           href="https://www.facebook.com/havard.hjelmeseth"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={facebook} />
+          <img src={facebook} alt="Facebook logo" />
         </a>
       </div>
     </div>
