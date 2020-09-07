@@ -5,6 +5,7 @@ import "./style.css";
 import nba from "./../../assets/nba-app.png";
 import oweIt from "./../../assets/owe-it.png";
 import Karakterkalkulator from "./../../assets/karakter-kalkulator.png";
+import sellyoshit from "./../../assets/sellyoshit.png";
 
 export default function Projects() {
   return (
@@ -39,6 +40,16 @@ export default function Projects() {
         technologies="HTML, CSS, Bootstrap"
         demo="https://vibrant-goldstine-c92091.netlify.app/karakterkalkulator.html"
         code="https://github.com/haavardsjef/KarakterKalkulator"
+      />
+      <Project
+        title="SellYo'Shit"
+        description="Nettside for kjøp og salg (likt finn.no). Laget med React i emnet 
+        TDT4140 - Programvareutvikling ved NTNU. Jeg programmerte hele frontenden mens 
+        resten av teamet tok seg av backend. Repositoret er republisert på min github 
+        med intakt git log og commit history."
+        image={sellyoshit}
+        technologies="React, Material UI"
+        code="https://github.com/haavardsjef/sell-yo-shit"
       />
     </div>
   );
