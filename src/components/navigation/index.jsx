@@ -6,6 +6,12 @@ export default function Navigation() {
   return (
     <div className="navigation">
       <h2 className="nav-title">Håvard Hjelmeseth</h2>
+      <input type="checkbox" id="nav-checkbox" name="nav-checkbox" />
+      <label className="nav-toggle" for="nav-checkbox">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </label>
       <div className="nav-buttons">
         <Link to="/" className="nav-item">
           Prosjekter

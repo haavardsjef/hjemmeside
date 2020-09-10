@@ -23,14 +23,64 @@
   text-decoration: underline;
 }
 
+.nav-buttons {
+  display: flex;
+}
+
+.nav-toggle,
+#nav-checkbox {
+  /* Hide nav toggle unless on mobile */
+  display: none;
+}
+
 @media only screen and (max-width: 1500px) {
+  /* Make navigation same size as content body */
   .navigation {
     width: 80%;
   }
 }
 
 @media only screen and (max-width: 1000px) {
+  /* Mobile navigation */
   .navigation {
-    width: 95%;
+    /* Make nave go vertical and align to left */
+    width: calc(100% - 1.5em);
+    padding-left: 1.5em;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: lightgrey;
+  }
+
+  .nav-toggle {
+    /* Show hamburger menu in top right */
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+
+  .nav-buttons {
+    /* Hide navigation buttons by default */
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    /* Give the nav buttons some padding and margin*/
+    padding: 0.1em 0;
+    margin: 0.3em 0;
+  }
+
+  .line {
+    /* Line for hamburger menu */
+    height: 4px;
+    margin: 6px;
+    width: 32px;
+    background-color: black;
+  }
+
+  #nav-checkbox:checked ~ .nav-buttons {
+    /* When hamburger is "checked", display navigation */
+    display: flex;
   }
 }
