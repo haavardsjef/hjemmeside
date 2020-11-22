@@ -7,6 +7,7 @@ import oweIt from "./../../assets/owe-it.png";
 import Karakterkalkulator from "./../../assets/karakter-kalkulator.png";
 import sellyoshit from "./../../assets/sellyoshit.png";
 import hjemmeside from "./../../assets/hjemmeside.png";
+import bingefest from "./../../assets/bingefest.png";
 
 export default function Projects() {
   return (
@@ -60,6 +61,15 @@ export default function Projects() {
         image={hjemmeside}
         technologies="React"
         code="https://github.com/haavardsjef/hjemmeside"
+      />
+      <Project
+        title="Bingefest"
+        description="React Native klient for å gjøre søk på populære filmer, skrevet i emnet 
+        IT2810 Webutvikling ved NTNU. Applikasjonen bruker komponenter fra det material design 
+        baserte biblioteket react-native-paper, og henter data fra et egenlaget REST API skrevet 
+        med Express og Node."
+        image={bingefest}
+        technologies="React Native, Express, TypeScript"
       />
     </div>
   );
